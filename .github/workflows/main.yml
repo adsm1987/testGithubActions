@@ -30,8 +30,14 @@ jobs:
       with:
         python-version: 3.8
     
+    - name: Set up Pylint
+      uses: programmingwithalex/pylinter@main
+        
     - name: Install dependencies
       run: pip install -r requirements.txt
     
+    - name: Run tests
+      run: pylint test.py
+
     - name: Run code
       run: python3 test.py
