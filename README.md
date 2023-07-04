@@ -5,5 +5,5 @@ In this case the only thing that we need to run our project in the pipeline and 
 
 ### Pipeline code 
 
-.github/workflows/main.yml
+`.github/workflows/main.yml`
 
